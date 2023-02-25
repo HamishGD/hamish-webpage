@@ -1,3 +1,78 @@
 body {
     background: pink;
 }
+
+h1, span {
+    color: white;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.rotatingText {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.rotatingText-greeting {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    left: 0;
+    margin-bottom: 0;
+    margin-top: 50px;
+    text-align: center;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    text-transform: lowercase;
+    top: 2;
+}
+
+.rotatingText-greeting:nth-of-type(1) {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-delay: 0s;
+}
+
+.rotatingText-greeting:nth-of-type(2) {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-delay: 3s;
+}
+
+.rotatingText-greeting:nth-of-type(3) {
+    animation-name: rotate;
+    animation-duration: 3s;
+    animation-delay: 6s;
+}
+
+.rotatingText-greeting:nth-of-type(4) {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-delay: 9s;
+}
+
+@keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+
+@keyframes rotate-last {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 0, 0);
+    }
+}
