@@ -1,2 +1,1 @@
 # Hamish Webpage
-Hello.
