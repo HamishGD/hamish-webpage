@@ -2,29 +2,46 @@ body {
     background: pink;
 }
 
-/*
 h1 {
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading {
+    margin: auto;
+    width: 50%;
+    padding: 85px;
+    text-align: center;
+}
+
+span {
     color: white;
     font-size: 50px;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
 }
-*/
 
-span {
-    color: white;
-    font-size: 55px;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    text-decoration: italic;
+/*Icecream img section*/
+.fade-in-icecream {
+    animation: fadeIn ease 15s;
+    -webkit-animation: fadeIn ease 15s;
+    -moz-animation: fadeIn ease 15s;
+    -o-animation: fadeIn ease 15s;
+    -ms-animation: fadeIn ease 15s;
 }
 
-.rotatingText {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    text-align: center;
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative; 
+    top: 100px;
+    width: 65%;
+    border-radius: 40px;
 }
 
+/*Rotating text section*/
 .rotatingText-greeting {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 50px;
@@ -33,12 +50,13 @@ span {
     left: 0;
     margin-bottom: 0;
     margin-top: 0;
-    text-align: top;
+    text-align: center;
     opacity: 0;
     position: absolute;
     right: 0;
     text-transform: lowercase;
     top: 2;
+
 }
 
 .rotatingText-greeting:nth-of-type(1) {
@@ -65,6 +83,19 @@ span {
     animation-delay: 9s;
 }
 
+.rotatingText-greeting:nth-of-type(5) {
+    animation-name: rotate;
+    animation-duration: 4s;
+    animation-delay: 12s;
+}
+
+.rotatingText-greeting:nth-of-type(6) {
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-delay: 15s;
+}
+
+/*Compatible keyframes for rotating text*/
 @keyframes rotate {
     0% {
         opacity: 0;
@@ -80,14 +111,67 @@ span {
     }
 }
 
-.fade-in-icecream {
-    animation: fadeIn ease 15s;
-    -webkit-animation: fadeIn ease 15s;
-    -moz-animation: fadeIn ease 15s;
-    -o-animation: fadeIn ease 15s;
-    -ms-animation: fadeIn ease 15s;
+@-moz-keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
 }
 
+@-webkit-keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+
+@-o-keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+
+@-ms-keyframes rotate {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 50px, 0);
+    }
+    20%, 80% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(0, -25px, 0);
+    }
+}
+
+/*Compatible keyframes for fade in image*/
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -124,21 +208,36 @@ span {
     }
 }
 
-
-}
-
 @-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
     }
     100% {
         opacity: 1;
     }
 }
 
-@-0-keyframes fadeIn {
+@-o-keyframes fadeIn {
     0% {
         opacity: 0;
+    }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
     }
     100% {
         opacity: 1;
@@ -149,16 +248,51 @@ span {
     0% {
         opacity: 0;
     }
+    25% {
+        opacity: 0.4;
+    }
+    50% {
+        opacity: 0.6;
+    }
+    75% {
+        opacity: 0.8;
+    }
     100% {
         opacity: 1;
     }
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative; top: 100px;
-    width: 65%;
+/*Button reveal section for main webpage information*/
+button {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 20px;
+    padding: 5px;
+    border: none;
 }
+
+button::before {
+    content: "";
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: pink;
+    transition: 0.5s ease-in-out;
+}
+
+button:hover::before {
+    left: -100%;
+}
+
+
+
+
+
+
+
+
+/*media query section*/
 
