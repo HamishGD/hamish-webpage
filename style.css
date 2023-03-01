@@ -9,6 +9,12 @@ html {
     font-size: 60px;
     text-align: center;
 }
+.header-sub {
+    color: #D7A1FD;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 15px;
+    text-align: center;
+}
 .header-content {
     background-color: #D7A1FD;
     color: black;
@@ -32,41 +38,29 @@ body {
     color: black;
 }
 .features-items {
-    font-family: 'Raleway', sans-serif;
+    font-family: ;
     font-size: 12px;
     font-weight: bold;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.features {
-    color: white;
+.reviews-content {
+    background-color: #F4EDE9;
+    font-family: 'Climate Crisis', cursive;
+    color: brown;
 }
 
 
 
-.reviews {
-    color: white;
-}
 
-.container {
-    color: white;
-}
+
+
+
+
+
+
+
+
+
 
 
 
