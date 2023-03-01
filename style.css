@@ -10,19 +10,12 @@ html {
     text-align: center;
 }
 .header-sub {
-    color: #D7A1FD;
+    background-color: #D7A1FD;
+    color: #A52A2A;
     font-family: 'Climate Crisis', cursive;
     font-size: 15px;
     text-align: center;
-}
-.header-content {
-    background-color: #D7A1FD;
-    color: black;
-    font-family: 'Climate Crisis', cursive;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
+    padding: 0.5px;
 }
 
 /*main content section*/
@@ -38,15 +31,87 @@ body {
     color: black;
 }
 .features-items {
-    font-family: ;
+    font-family: 'Gloock', serif;
     font-size: 12px;
     font-weight: bold;
     color: black;
 }
-.reviews-content {
+.work-content {
     background-color: #F4EDE9;
     font-family: 'Climate Crisis', cursive;
-    color: brown;
+    color: #A52A2A;
+}
+
+/*bottom content section*/
+  /*calender bottom*/
+.container {
+    background-color: #ABF62D;
+    font-family: 'Climate Crisis', cursive;
+    color: black;
+    height: 350px;
+    width: 350px;
+    left: 50%;
+    font-family: 'Gloock', serif;
+    font-size: 15px;
+}
+.container h2 {
+    font-size: 20px;
+    font-family: 'Climate Crisis', cursive;
+}
+.calender-container {
+    position: relative;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.calender {
+    background: #fff;
+    border-radius: 0 0 1em 1em;
+    color: #555;
+    display: inline-block;
+    padding: 1em;
+}
+.calender thead {
+    color: #e66b6b;
+    text-transform: uppercase;
+}
+.calender td {
+    padding: 0.5em;
+    text-align: center;
+}
+.calender tbody td:hover {
+    background: #cacaca;
+    color: #fff;
+}
+.prev-month, .next-month {
+    color: #cacaca;
+}
+
+  /*rest of bottom*/
+.bottom-content {
+    background-color: #F4EDE9;
+    color: black;
+    font-family: 'Climate Crisis', cursive;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.container2 {
+    background-color: #D7A1FD;
+    font-family: 'Gloock', serif;
+    font-size: 12px;
+    color: black;
+}
+
+/*footer*/
+.copyright {
+    text-align: center;
+    font-size: 10px;
+    font-family: 'Gloock', serif;
+    color: black;
 }
 
 
@@ -55,24 +120,7 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*media screen styling*/
 
 
 
