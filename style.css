@@ -10,7 +10,7 @@ a:link, a:visited {
 .header {
     color: black;
     font-family: 'Climate Crisis', cursive;
-    font-size: 85px;
+    font-size: 90px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -19,8 +19,8 @@ a:link, a:visited {
     background-color: #D7A1FD;
     color: #A52A2A;
     font-family: 'Climate Crisis', cursive;
-    font-size: 15px;
-    padding: 0.5px;
+    font-size: 18px;
+    padding: 8px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -73,15 +73,13 @@ body {
     color: black;
     height: 150px;
     width: 150px;
-
     font-family: 'Gloock', serif;
-    font-size: 15px;
     display: flex;
     flex-flow: row wrap;
     justify-content: left;
 }
 .container h2 {
-    font-size: 20px;
+    font-size: 25px;
     font-family: 'Climate Crisis', cursive;
 }
 .calender-container {
@@ -132,17 +130,12 @@ table {
     font-family: 'Gloock', serif;
     font-size: 12px;
     color: black;
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
 }
-.container2 h2 {
+
+.contact {
     font-family: 'Climate Crisis', cursive;
     font-size: 20px;
     color: black;
-    display: flex;
-    justify-content: left;
-    flex-flow: row wrap;
 }
 
 /*footer*/
@@ -163,7 +156,160 @@ table {
 
 
 /*media screen styling*/
+  /*mobile*/
+@media only screen and (min-width: 420px) and (max-width: 480px) {
+    .header {
+        font-size: 48px;
+        text-align: center;
 
+    }
+    .header-sub {
+        font-size: 10px;
+        padding: 2px;
+        text-align: center;
+      
+    }
+    .features-content {
+        font-size: 8px;
+        text-align: center;
+    }
+    .features-items {
+        font-size: 10px;
+        text-align: center;
+    }
+    .features-items h2 {
+        font-size: 12px;
+    }
+    .work-content {
+        font-size: 12px;
+    }
+    .container {
+        height: 50px;
+        width: 50px;
+    }
+    .container h2 {
+        font-size: 15px;
+    }
+    .bottom-content {
+        font-size: 12px;
+        text-align: center;
+    }
+    .container2 {
+       text-align: left;
+    }
+    .container2 h2 {
+        font-size: 13px;
+    }
+    .copyright {
+        font-size: 8px;
+    }
+}
+
+  /*tablet*/
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        font-size: 80px;
+        text-align: center;
+    }
+    .header-sub {
+        font-size: 15px;
+        padding: 5px;
+        text-align: center;
+    }
+    .features-content {
+        font-size: 12px;
+        text-align: left;
+    }
+    .features-items {
+        font-size: 12px;
+        text-align: left;
+    }
+    .features-items h2 {
+        font-size: 16px;
+    }
+    .work-content {
+        font-size: 15px;
+    }
+    .container {
+        height: 100px;
+        width: 100px;
+    }
+    .bottom-content {
+        font-size: 15px;
+        text-align: left;
+    }
+    .container2 {
+       text-align: left;
+    }
+    .container2 h2 {
+        font-size: 25px;
+    }
+    .copyright {
+        font-size: 10px;
+    }
+}
+
+/*desktop*/
+@media only screen and (min-width: 768px) and (max-width: 1250px) {
+    .header {
+        font-size: 90px;
+        text-align: center;
+    }
+    .header-sub {
+        font-size: 18px;
+        padding: 8px;
+        text-align: center;
+    }
+    .features-content {
+        font-size: 13px;
+        text-align: left;
+    }
+    .features-items {
+        font-size: 13px;
+        text-align: left;
+    }
+    .features-items h2 {
+        font-size: 18px;
+    }
+    .work-content {
+        font-size: 15px;
+    }
+    .container {
+        height: 100px;
+        width: 100px;
+    }
+    .container h2 {
+        font-size: 20px;
+    }
+    .bottom-content {
+        font-size: 18px;
+        text-align: left;
+    }
+    .container2 {
+       text-align: left;
+    }
+    .container2 h2 {
+        font-size: 30px;
+    }
+    .copyright {
+        font-size: 12px;
+    }
+}
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+    
 
 
 
