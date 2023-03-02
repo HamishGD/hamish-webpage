@@ -15,3 +15,5 @@ In total, 17 commits were made (can be viewed under my webpage folder).
 
 There are some small tweaks that can defintely be done, but overall i'm really happy with how I did on my first project. 
 
+Link to Webpage:
+https://hamishgd.github.io/hamish-webpage/
