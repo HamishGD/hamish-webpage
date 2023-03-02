@@ -1,21 +1,29 @@
 html {
     box-sizing: border-box;
 }
+a:link, a:visited {
+    color: #A52A2A;
+    text-decoration: none;
+}
 
 /*header section*/
 .header {
     color: black;
     font-family: 'Climate Crisis', cursive;
-    font-size: 60px;
-    text-align: center;
+    font-size: 85px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 .header-sub {
     background-color: #D7A1FD;
     color: #A52A2A;
     font-family: 'Climate Crisis', cursive;
     font-size: 15px;
-    text-align: center;
     padding: 0.5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
 }
 
 /*main content section*/
@@ -23,23 +31,38 @@ body {
     background: #ABF62D;
     margin: 10px auto;
     text-align: left;
-    font-size: 12px
+    font-size: 12px;
 }
 .features-content {
     background-color: #ABF62D;
     font-family: 'Climate Crisis', cursive;
     color: black;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
 }
 .features-items {
+    background-color: #ABF62D;
     font-family: 'Gloock', serif;
     font-size: 12px;
     font-weight: bold;
     color: black;
+    display: flex;
+    flex-flow: column;
+    justify-content: left;
 }
 .work-content {
     background-color: #F4EDE9;
     font-family: 'Climate Crisis', cursive;
     color: #A52A2A;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+.work-content-figures {
+    background-color: #F4EDE9;
+    display: flex;
+    flex-flow: row wrap;
 }
 
 /*bottom content section*/
@@ -48,18 +71,23 @@ body {
     background-color: #ABF62D;
     font-family: 'Climate Crisis', cursive;
     color: black;
-    height: 350px;
-    width: 350px;
-    left: 50%;
+    height: 150px;
+    width: 150px;
+
     font-family: 'Gloock', serif;
     font-size: 15px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
 }
 .container h2 {
     font-size: 20px;
     font-family: 'Climate Crisis', cursive;
 }
 .calender-container {
-    position: relative;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
 }
 table {
     border-collapse: collapse;
@@ -104,20 +132,34 @@ table {
     font-family: 'Gloock', serif;
     font-size: 12px;
     color: black;
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
+}
+.container2 h2 {
+    font-family: 'Climate Crisis', cursive;
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: left;
+    flex-flow: row wrap;
 }
 
 /*footer*/
 .copyright {
     text-align: center;
-    font-size: 10px;
+    font-size: 12px;
     font-family: 'Gloock', serif;
     color: black;
+    direction: flex;
+    justify-content: center;
+    flex-flow: row wrap;
 }
-
-
-
-
-
+.social-links {
+    text-align: center;
+    direction: flex;
+    flex-flow: row wrap;
+}
 
 
 /*media screen styling*/
