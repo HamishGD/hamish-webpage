@@ -11,9 +11,8 @@ a:link, a:visited {
     color: black;
     font-family: 'Climate Crisis', cursive;
     font-size: 90px;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+    margin-top: -8%;
+    padding: 1.5%;
 }
 .header-sub {
     background-color: #D7A1FD;
@@ -21,7 +20,8 @@ a:link, a:visited {
     font-family: 'Climate Crisis', cursive;
     font-size: 18px;
     padding: 8px;
-    display: flex;
+    margin-top: -8%;
+    direction: flex;
     flex-flow: row wrap;
     justify-content: center;
 }
@@ -63,6 +63,7 @@ body {
     background-color: #F4EDE9;
     display: flex;
     flex-flow: row wrap;
+    justify-content: center;
 }
 
 /*bottom content section*/
@@ -116,7 +117,7 @@ table {
 
   /*rest of bottom*/
 .bottom-content {
-    background-color: #F4EDE9;
+    background-color: #D7A1FD;
     color: black;
     font-family: 'Climate Crisis', cursive;
     font-size: 20px;
@@ -161,13 +162,11 @@ table {
     .header {
         font-size: 48px;
         text-align: center;
-
     }
     .header-sub {
         font-size: 10px;
         padding: 2px;
         text-align: center;
-      
     }
     .features-content {
         font-size: 8px;
@@ -250,7 +249,7 @@ table {
 }
 
 /*desktop*/
-@media only screen and (min-width: 768px) and (max-width: 1250px) {
+@media only screen and (min-width: 768px) and (max-width: 1800px) {
     .header {
         font-size: 90px;
         text-align: center;
